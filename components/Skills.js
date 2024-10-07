@@ -5,7 +5,6 @@ import { useState } from 'react';
 export default function Skills() {
   const [popupData, setPopupData] = useState(null);
   const [hoveredPosition, setHoveredPosition] = useState({ x: 0, y: 0 });
-  const [loading, setLoading] = useState(false);
 
   const skills = [
     {
@@ -57,7 +56,6 @@ export default function Skills() {
     const adjustedY = clientY - 100;
 
     setHoveredPosition({ x: adjustedX, y: adjustedY });
-    setLoading(true);
     setPopupData(null);
 
     try {
@@ -67,8 +65,6 @@ export default function Skills() {
     } catch (error) {
       console.error('Error fetching data:', error);
       setPopupData({ title: 'Error', description: 'Failed to load data' });
-    } finally {
-      setLoading(false);
     }
   };
 
@@ -113,7 +109,6 @@ export default function Skills() {
           {popupData.image && <img src={popupData.image} alt="Preview" className="popup-image" />}
         </div>
       )}
-      {loading && <div className="popup">Loading...</div>}
     </div>
   );
 }
