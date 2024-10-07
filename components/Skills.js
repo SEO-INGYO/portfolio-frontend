@@ -11,42 +11,41 @@ export default function Skills() {
     {
       category: "Programming Languages",
       items: [
-        { name: 'C', wikiLink: 'https://namu.wiki/w/C%20언어' },
-        { name: 'C++', wikiLink: 'https://namu.wiki/w/C++' },
-        { name: 'C#', wikiLink: 'https://namu.wiki/w/C%23' },
-        { name: 'Java', wikiLink: 'https://namu.wiki/w/Java' },
-        { name: 'Python', wikiLink: 'https://namu.wiki/w/Python' },
-        { name: 'JavaScript', wikiLink: 'https://namu.wiki/w/JavaScript' }
+        { name: 'C', wikiLink: 'https://ko.wikipedia.org/wiki/C_(프로그래밍_언어)' },
+        { name: 'C++', wikiLink: 'https://ko.wikipedia.org/wiki/C%2B%2B' },
+        { name: 'C#', wikiLink: 'https://ko.wikipedia.org/wiki/C_샤프' },
+        { name: 'Java', wikiLink: 'https://ko.wikipedia.org/wiki/자바_(프로그래밍_언어)' },
+        { name: 'Python', wikiLink: 'https://ko.wikipedia.org/wiki/파이썬' },
+        { name: 'JavaScript', wikiLink: 'https://ko.wikipedia.org/wiki/자바스크립트' }
       ]
     },
     {
       category: "Frontend Technologies",
       items: [
-        { name: 'React', wikiLink: 'https://namu.wiki/w/React(라이브러리)' },
-        { name: 'Vue.js', wikiLink: 'https://namu.wiki/w/Vue.js' },
-        { name: 'Next.js', wikiLink: 'https://namu.wiki/w/Next.js' },
-        { name: 'Nuxt.js', wikiLink: 'https://namu.wiki/w/Nuxt.js' },
-        { name: 'Bootstrap', wikiLink: 'https://namu.wiki/w/Bootstrap(프레임워크)' },
-        { name: 'Tailwind CSS', wikiLink: 'https://namu.wiki/w/Tailwind%20CSS' }
+        { name: 'React', wikiLink: 'https://ko.wikipedia.org/wiki/리액트_(자바스크립트_라이브러리)' },
+        { name: 'Vue.js', wikiLink: 'https://ko.wikipedia.org/wiki/Vue.js' },
+        { name: 'Next.js', wikiLink: 'https://ko.wikipedia.org/wiki/Next.js' },
+        { name: 'Nuxt.js', wikiLink: 'https://ko.wikipedia.org/wiki/Nuxt.js' },
+        { name: 'Bootstrap', wikiLink: 'https://ko.wikipedia.org/wiki/부트스트랩_(프론트엔드_프레임워크)' },
       ]
     },
     {
       category: "Backend Technologies",
       items: [
-        { name: 'Node.js', wikiLink: 'https://namu.wiki/w/Node.js' },
-        { name: 'Spring Boot', wikiLink: 'https://namu.wiki/w/Spring(프레임워크)' },
-        { name: 'Express.js', wikiLink: 'https://namu.wiki/w/Express.js' },
-        { name: 'ASP.NET', wikiLink: 'https://namu.wiki/w/ASP.NET' },
-        { name: 'Django', wikiLink: 'https://namu.wiki/w/Django' },
+        { name: 'Node.js', wikiLink: 'https://ko.wikipedia.org/wiki/Node.js' },
+        { name: 'Spring Boot', wikiLink: 'https://ko.wikipedia.org/wiki/스프링_프레임워크' },
+        { name: 'Express.js', wikiLink: 'https://ko.wikipedia.org/wiki/Express.js' },
+        { name: 'ASP.NET', wikiLink: 'https://ko.wikipedia.org/wiki/ASP.NET' },
+        { name: 'Django', wikiLink: 'https://ko.wikipedia.org/wiki/장고_(웹_프레임워크)' },
       ]
     },
     {
       category: "DevOps",
       items: [
-        { name: 'Git', wikiLink: 'https://namu.wiki/w/Git' },
-        { name: 'GitHub', wikiLink: 'https://namu.wiki/w/GitHub' },
-        { name: 'GitLab', wikiLink: 'https://namu.wiki/w/GitLab' },
-        { name: 'Docker', wikiLink: 'https://namu.wiki/w/Docker' }
+        { name: 'Git', wikiLink: 'https://ko.wikipedia.org/wiki/깃_(소프트웨어)' },
+        { name: 'GitHub', wikiLink: 'https://ko.wikipedia.org/wiki/깃허브' },
+        { name: 'GitLab', wikiLink: 'https://ko.wikipedia.org/wiki/깃랩' },
+        { name: 'Docker', wikiLink: 'https://ko.wikipedia.org/wiki/도커_(소프트웨어)' }
       ]
     }
   ];
