@@ -1,0 +1,471 @@
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Regular.woff2') format('woff2'),
+       url('/fonts/Pretendard-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Bold.woff2') format('woff2'),
+       url('/fonts/Pretendard-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #0d1b2a;
+  padding: 1rem 2rem;
+  color: #e0e1dd;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    h1 {
+      font-family: 'Pretendard', sans-serif;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      flex-wrap: wrap;
+
+      li {
+        margin-left: 1.5rem;
+
+        a {
+          text-decoration: none;
+          color: #e0e1dd;
+          font-size: 1rem;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #ffc857;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    ul {
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+
+    li {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+main {
+  margin-top: 80px;
+  padding: 2rem;
+}
+
+section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e1dd;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+h1, h2 {
+  font-family: 'Pretendard', sans-serif;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+}
+
+form {
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 1rem;
+  }
+
+  button {
+    background-color: #0070f3;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #005bb5;
+    }
+  }
+}
+
+.about {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #272727;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+.skills {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  position: relative;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #272727;
+  }
+
+  .skills-category {
+    margin-bottom: 4rem;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1.5rem;
+    }
+
+    a.skill-card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .skill-card {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      height: 100px; /* 수정된 높이 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 1rem;
+        color: #333; /* 텍스트 색상 */
+      }
+    }
+  }
+
+  .popup {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    z-index: 1000;
+    max-width: 300px;
+    text-align: left;
+    pointer-events: none; /* 팝업이 마우스 이벤트를 받지 않도록 설정 */
+
+    h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .popup-image {
+      width: 80px; /* 이미지 크기를 고정 */
+      height: 80px;
+      margin-top: 0.5rem;
+      border-radius: 5px;
+      object-fit: cover; /* 이미지 비율 유지 */
+    }
+  }
+}
+
+.projects {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  position: relative;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #272727;
+  }
+
+  .projects-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .projects-scroll {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden; /* 수직 스크롤 제거 */
+    scroll-behavior: smooth;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    cursor: grab;
+    user-select: none; /* 텍스트 선택 비활성화 */
+    scroll-snap-type: x mandatory; /* 스크롤 멈출 때 카드에 맞춰 멈춤 */
+  }
+
+  .projects-scroll::-webkit-scrollbar {
+    display: none; /* 스크롤바 숨기기 */
+  }
+
+  .projects-scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .project-card {
+    min-width: 250px;
+    max-width: 370px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex-shrink: 0;
+    
+    .project-image {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-links {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+
+      a {
+        background-color: #0070f3;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #005bb5;
+        }
+      }
+
+      .github-link {
+        margin-right: auto;
+      }
+
+      .live-link {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .scroll-btn {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .scroll-btn.left {
+    left: -40px;
+  }
+
+  .scroll-btn.right {
+    right: -40px;
+  }
+}
+
+.contact {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #272727;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    input,
+    textarea {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      height: 150px;
+      resize: none;
+    }
+
+    button {
+      background-color: #0070f3;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #005bb5;
+      }
+    }
+  }
+
+  .contact-info {
+    margin-top: 2rem;
+    
+    a {
+      color: #0070f3;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
