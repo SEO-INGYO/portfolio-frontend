@@ -299,22 +299,21 @@ form {
   .projects-scroll {
     display: flex;
     overflow-x: auto;
-    overflow-y: hidden; /* 수직 스크롤 제거 */
+    overflow-y: hidden;
     scroll-behavior: smooth;
     gap: 1.5rem;
-    padding-bottom: 1rem;
     cursor: grab;
-    user-select: none; /* 텍스트 선택 비활성화 */
-    scroll-snap-type: x mandatory; /* 스크롤 멈출 때 카드에 맞춰 멈춤 */
+    user-select: none;
+    scroll-snap-type: x mandatory;
   }
 
   .projects-scroll::-webkit-scrollbar {
-    display: none; /* 스크롤바 숨기기 */
+    display: none;
   }
 
   .projects-scroll {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   .project-card {

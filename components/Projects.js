@@ -11,60 +11,76 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "농산물 유통정보 차트",
-      description: "농산물 가격 관련 대용량 데이터를 활용한 REST API 를 개발하였습니다.",
-      image: "/images/ongojishin.png",
-      technologies: ["Java", "Spring Boot", "Mysql"],
-      githubLink: null,
-      liveLink: "https://ontwo.co.kr/ongo/marketprice"
+      title: "Quest Task Management",
+      description: "사용자가 다양한 과제를 수행하고 경험치를 통해 레벨을 올리는 과제 관리 웹사이트입니다.",
+      image: "/images/quest.png",
+      technologies: ["ASP.NET", "MSSQL"],
+      githubLink: "https://github.com/SEO-INGYO/quest_website-assignment",
+      liveLink: null,
+      duration: "2021년 3분기 - 2021년 4분기"
     },
     {
-      title: "OpenAI API",
-      description: "OpenAI API 를 사용해보려고 Django 및 MariaDB 를 사용해서 개발한 프로젝트입니다. ChatGPT 와 유사한 화면으로 구성하였습니다.",
-      image: "/images/measure.png",
+      title: "Restaurant Locator",
+      description: "알고리즘 과제로, 가장 가까운 식당을 계산하고 지도에 표시하는 기능을 개발한 프로젝트입니다.",
+      image: "/images/restaurant.png",
+      technologies: ["Python", "Jupyter Notebook"],
+      githubLink: "https://github.com/SEO-INGYO/nearby_restaurant_marker-assignment",
+      liveLink: null,
+      duration: "2021년 3분기 - 2021년 4분기"
+    },
+    {
+      title: "Smart Plant Pot",
+      description: "아두이노와 라즈베리 파이를 활용해 원격으로 제어할 수 있는 스마트 화분을 개발한 IoT 프로젝트입니다.",
+      image: "/images/plant.png",
+      technologies: ["Java", "Python", "MariaDB"],
+      githubLink: "https://github.com/SEO-INGYO/pet_plant-assignment",
+      liveLink: null,
+      duration: "2022년 1분기 - 2022년 2분기"
+    },
+    {
+      title: "Agriculture Data Chart",
+      description: "대용량 농산물 가격 데이터를 사용해 REST API를 개발하고, 데이터를 시각화한 프로젝트입니다.",
+      image: "/images/ongojishin.png",
+      technologies: ["Java", "Spring Boot", "MySQL"],
+      githubLink: null,
+      liveLink: "https://ontwo.co.kr/ongo/marketprice",
+      duration: "2023년 4분기 - 2024년 1분기"
+    },
+    {
+      title: "OpenAI API Integration",
+      description: "OpenAI API를 Django와 MariaDB로 구현해 ChatGPT와 유사한 UI를 개발한 프로젝트입니다.",
+      image: "/images/openai.png",
       technologies: ["Python", "Django", "MariaDB"],
       githubLink: "https://github.com/SEO-INGYO/openai-api",
-      liveLink: null
+      liveLink: null,
+      duration: "2024년 2분기 - "
     },
     {
-      title: "블로그 백오피스 및 REST API",
-      description: "개인적으로 사용할 블로그를 위해서 개발한 게시판 관련 백오피스 및 REST API를 개발하였습니다.",
-      image: "/images/measure.png",
+      title: "Blog Backend & REST API",
+      description: "개인 블로그를 위한 백엔드 및 게시판 REST API를 개발한 프로젝트입니다.",
+      image: "/images/backoffice.png",
       technologies: ["Java", "Spring Boot", "MariaDB"],
       githubLink: "https://github.com/SEO-INGYO/blog-backend",
-      liveLink: "https://blog.rocd.site"
+      liveLink: null,
+      duration: "2024년 3분기 - "
     },
     {
-      title: "개인 블로그",
-      description: "백엔드와 API 통신을 통해 게시글을 출력하고 보여주는 개인 블로그를 개발하였습니다.",
-      image: "/images/measure.png",
+      title: "Personal Blog Frontend",
+      description: "API를 통해 게시글을 불러와 표시하는 블로그 프론트엔드 프로젝트입니다.",
+      image: "/images/blog.png",
       technologies: ["Python", "Django", "MariaDB"],
       githubLink: "https://github.com/SEO-INGYO/blog-frontend",
-      liveLink: "https://blog.rocd.site"
+      liveLink: "https://blog.rocd.site",
+      duration: "2024년 3분기 - "
     },
     {
-      title: "JSON 키값 비교 스크립트",
-      description: "비슷한 JSON 파일을 비교할 일이 생겨 두 개의 JSON 파일의 키쌍 값을 비교하는 스크립트를 짰습니다.",
-      image: "/images/measure.png",
+      title: "JSON Key Comparison Script",
+      description: "Python으로 두 JSON 파일의 키 값을 비교하는 스크립트를 작성한 프로젝트입니다.",
+      image: "/images/compare.png",
       technologies: ["Python"],
       githubLink: "https://github.com/SEO-INGYO/compare-script",
-      liveLink: null
-    },
-    {
-      title: "",
-      description: "",
-      image: "/images/measure.png",
-      technologies: [""],
-      githubLink: null,
-      liveLink: null
-    },
-    {
-      title: "",
-      description: "",
-      image: "/images/measure.png",
-      technologies: [""],
-      githubLink: null,
-      liveLink: null
+      liveLink: null,
+      duration: "2024년 3분기"
     }
   ];
 
@@ -78,7 +94,7 @@ export default function Projects() {
     if (!isDragging) return;
     e.preventDefault();
     const x = e.pageX - scrollRef.current.offsetLeft;
-    const walk = (x - startX) * 1.5; // 드래그 속도 조절
+    const walk = (x - startX) * 1.5;
     scrollRef.current.scrollLeft = scrollLeft - walk;
   };
 
@@ -87,20 +103,18 @@ export default function Projects() {
   };
 
   const scrollLeftHandler = () => {
-    scrollRef.current.scrollLeft -= 300; // 화살표 클릭 시 왼쪽으로 300px 이동
+    scrollRef.current.scrollLeft -= 300;
   };
 
   const scrollRightHandler = () => {
-    scrollRef.current.scrollLeft += 300; // 화살표 클릭 시 오른쪽으로 300px 이동
+    scrollRef.current.scrollLeft += 300;
   };
 
   return (
     <div className="projects">
       <h2>Projects</h2>
       <div className="projects-container">
-        <button className="scroll-btn left" onClick={scrollLeftHandler}>
-          <FaArrowLeft />
-        </button>
+        <FaArrowLeft className="scroll-btn left" onClick={scrollLeftHandler} />
         <div
           className="projects-scroll"
           ref={scrollRef}
@@ -112,9 +126,10 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div key={index} className="project-card">
               <img src={project.image} alt={`${project.title} 이미지`} className="project-image" />
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
+              <h3>{project.title || "Project Title"}</h3>
+              <p>{project.description || "프로젝트 설명을 여기에 입력하세요."}</p>
               <p><strong>Technologies:</strong> {project.technologies.join(", ")}</p>
+              <p><strong>Duration:</strong> {project.duration}</p>
               <div className="project-links">
                 {project.githubLink && (
                   <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="github-link">
@@ -130,9 +145,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
-        <button className="scroll-btn right" onClick={scrollRightHandler}>
-          <FaArrowRight />
-        </button>
+        <FaArrowRight className="scroll-btn right" onClick={scrollRightHandler} />
       </div>
     </div>
   );

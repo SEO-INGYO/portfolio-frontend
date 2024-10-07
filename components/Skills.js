@@ -22,11 +22,11 @@ export default function Skills() {
     {
       category: "Frontend Technologies",
       items: [
-        { name: 'React', wikiLink: 'https://namu.wiki/w/React' },
+        { name: 'React', wikiLink: 'https://namu.wiki/w/React(라이브러리)' },
         { name: 'Vue.js', wikiLink: 'https://namu.wiki/w/Vue.js' },
         { name: 'Next.js', wikiLink: 'https://namu.wiki/w/Next.js' },
         { name: 'Nuxt.js', wikiLink: 'https://namu.wiki/w/Nuxt.js' },
-        { name: 'Bootstrap', wikiLink: 'https://namu.wiki/w/Bootstrap' },
+        { name: 'Bootstrap', wikiLink: 'https://namu.wiki/w/Bootstrap(프레임워크)' },
         { name: 'Tailwind CSS', wikiLink: 'https://namu.wiki/w/Tailwind%20CSS' }
       ]
     },
@@ -34,21 +34,19 @@ export default function Skills() {
       category: "Backend Technologies",
       items: [
         { name: 'Node.js', wikiLink: 'https://namu.wiki/w/Node.js' },
-        { name: 'Spring Boot', wikiLink: 'https://namu.wiki/w/Spring%20Framework' },
+        { name: 'Spring Boot', wikiLink: 'https://namu.wiki/w/Spring(프레임워크)' },
         { name: 'Express.js', wikiLink: 'https://namu.wiki/w/Express.js' },
         { name: 'ASP.NET', wikiLink: 'https://namu.wiki/w/ASP.NET' },
         { name: 'Django', wikiLink: 'https://namu.wiki/w/Django' },
-        { name: 'Docker', wikiLink: 'https://namu.wiki/w/Docker' }
       ]
     },
     {
-      category: "Version Control & Cloud",
+      category: "DevOps",
       items: [
         { name: 'Git', wikiLink: 'https://namu.wiki/w/Git' },
         { name: 'GitHub', wikiLink: 'https://namu.wiki/w/GitHub' },
         { name: 'GitLab', wikiLink: 'https://namu.wiki/w/GitLab' },
-        { name: 'AWS', wikiLink: 'https://namu.wiki/w/AWS' },
-        { name: 'NHN Cloud', wikiLink: 'https://namu.wiki/w/NHN%20Cloud' }
+        { name: 'Docker', wikiLink: 'https://namu.wiki/w/Docker' }
       ]
     }
   ];

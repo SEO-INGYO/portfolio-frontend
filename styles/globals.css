@@ -266,22 +266,21 @@ form button:hover {
 .projects .projects-scroll {
   display: flex;
   overflow-x: auto;
-  overflow-y: hidden; /* 수직 스크롤 제거 */
+  overflow-y: hidden;
   scroll-behavior: smooth;
   gap: 1.5rem;
-  padding-bottom: 1rem;
   cursor: grab;
   -webkit-user-select: none;
      -moz-user-select: none;
-          user-select: none; /* 텍스트 선택 비활성화 */
-  scroll-snap-type: x mandatory; /* 스크롤 멈출 때 카드에 맞춰 멈춤 */
+          user-select: none;
+  scroll-snap-type: x mandatory;
 }
 .projects .projects-scroll::-webkit-scrollbar {
-  display: none; /* 스크롤바 숨기기 */
+  display: none;
 }
 .projects .projects-scroll {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .projects .project-card {
   min-width: 250px;

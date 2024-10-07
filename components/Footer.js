@@ -1,7 +1,9 @@
 export default function Footer() {
-    return (
-      <footer>
-        <p>© 2024 Seo-Ingyo Portfolio. All rights reserved.</p>
-      </footer>
-    );
-  }  
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer>
+      <p>© {currentYear} Seo-Ingyo Portfolio. All rights reserved.</p>
+    </footer>
+  );
+}
