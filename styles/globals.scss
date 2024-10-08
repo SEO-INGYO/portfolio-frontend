@@ -228,23 +228,23 @@ form {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       text-align: center;
       cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      height: 100px; /* 수정된 높이 */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100px;
       display: flex;
       justify-content: center;
       align-items: center;
-
+    
       &:hover {
         transform: translateY(-5px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
       }
-
+    
       h3 {
         margin: 0;
         font-size: 1rem;
-        color: #333; /* 텍스트 색상 */
+        color: #333;
       }
-    }
+    }    
   }
 
   .popup {
@@ -317,15 +317,19 @@ form {
   }
 
   .project-card {
-    min-width: 250px;
-    max-width: 370px;
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     flex-shrink: 0;
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+  
     .project-image {
       width: 100%;
       height: 150px;
@@ -333,23 +337,23 @@ form {
       border-radius: 8px;
       margin-bottom: 1rem;
     }
-
+  
     h3 {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
     }
-
+  
     p {
       font-size: 1rem;
       line-height: 1.6;
       margin-bottom: 0.75rem;
     }
-
+  
     .project-links {
       display: flex;
       justify-content: space-between;
       margin-top: 1rem;
-
+  
       a {
         background-color: #0070f3;
         color: white;
@@ -357,21 +361,14 @@ form {
         border-radius: 5px;
         text-decoration: none;
         transition: background-color 0.3s ease;
-
+  
         &:hover {
           background-color: #005bb5;
         }
       }
-
-      .github-link {
-        margin-right: auto;
-      }
-
-      .live-link {
-        margin-left: auto;
-      }
     }
   }
+  
 
   .scroll-btn {
     background-color: rgba(0, 0, 0, 0.3);

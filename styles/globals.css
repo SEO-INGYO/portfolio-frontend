@@ -204,8 +204,8 @@ form button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  height: 100px; /* 수정된 높이 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,7 +217,7 @@ form button:hover {
 .skills .skills-category .skill-card h3 {
   margin: 0;
   font-size: 1rem;
-  color: #333; /* 텍스트 색상 */
+  color: #333;
 }
 .skills .popup {
   position: absolute;
@@ -283,14 +283,17 @@ form button:hover {
   scrollbar-width: none;
 }
 .projects .project-card {
-  min-width: 250px;
-  max-width: 370px;
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.projects .project-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 .projects .project-card .project-image {
   width: 100%;
@@ -324,12 +327,6 @@ form button:hover {
 }
 .projects .project-card .project-links a:hover {
   background-color: #005bb5;
-}
-.projects .project-card .project-links .github-link {
-  margin-right: auto;
-}
-.projects .project-card .project-links .live-link {
-  margin-left: auto;
 }
 .projects .scroll-btn {
   background-color: rgba(0, 0, 0, 0.3);
